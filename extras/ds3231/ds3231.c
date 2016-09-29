@@ -16,13 +16,13 @@
 /* Convert normal decimal to binary coded decimal */
 static inline uint8_t  decToBcd(uint8_t dec)
 {
-    return(((dec / 10) * 16) + (dec % 10));
+    return (dec / 10) * 16 + dec % 10;
 }
 
 /* Convert binary coded decimal to normal decimal */
 static inline uint8_t  bcdToDec(uint8_t bcd)
 {
-    return(((bcd / 16) * 10) + (bcd % 16));
+    return (bcd / 16) * 10 + bcd % 16;
 }
 
 /* Send a number of bytes to the rtc over i2c
