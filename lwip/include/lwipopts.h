@@ -288,7 +288,7 @@
  * The stack size value itself is platform-dependent, but is passed to
  * sys_thread_new() when the thread is created.
  */
-#define TCPIP_THREAD_STACKSIZE          512			//not ok:384 
+#define TCPIP_THREAD_STACKSIZE          384
 
 /**
  * TCPIP_THREAD_PRIO: The priority assigned to the main tcpip thread.
